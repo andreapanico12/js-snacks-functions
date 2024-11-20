@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // ARROW FUNCTION
 
-const inizialiArrow = (array) => {
+const inizialiArrayArrow = (array) => {
   let arrayvuoto = []
   for (i=0; i<array.length; i++)
     arrayvuoto.push(array[i].charAt(0))
@@ -15,10 +15,29 @@ const inizialiArrow = (array) => {
   return arrayvuoto
 }
 
+// ARROW FUNCTION METODO MAP TROVATO IN DOCUMENTAZIONE
+
+const inizialiArrayMap = (array) => array.map(item => item.charAt(0));
+
+
+//FUNCTION 
+
+function inizialiArray (array){
+  let arrayvuoto = []
+  for (i=0; i<array.length; i++)
+    arrayvuoto.push(array[i].charAt(0))
+
+  return arrayvuoto
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(inizialiArrow(names))
+console.log(inizialiArrayArrow(names))
+
+console.log(inizialiArrayMap(names))
+
+console.log(inizialiArray(names))
 
 
 
