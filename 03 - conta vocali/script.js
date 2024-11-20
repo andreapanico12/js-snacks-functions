@@ -5,17 +5,24 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-let numerovocali = 0
-let vocali = [`a`,`e`,`i`,`o`,`u`];
-for (i=0; i<word.length; i++){
-  if (vocali.includes(word.charAt(i)) === true){
-    numerovocali++
+
+
+function counterVocali (stringa){
+  let numerovocali = 0
+  let vocalipresenti = []
+  let vocali = [`a`,`e`,`i`,`o`,`u`];
+  for (i=0;i<stringa.length; i++){
+    if(vocali.includes(word.charAt(i))=== true){
+      numerovocali++
+      vocalipresenti.push(word.charAt(i))
+      vocalipresenti.join()
+    }
   }
+  return numerovocali  + `(${vocalipresenti})`
 }
-console.log(numerovocali)
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(counterVocali(word))
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
