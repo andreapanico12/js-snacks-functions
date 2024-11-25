@@ -10,11 +10,11 @@ const word = 'javascript';
 function counterVocali (stringa){
   let numerovocali = 0
   let vocalipresenti = []
-  let vocali = [`a`,`e`,`i`,`o`,`u`];
+  let vocali = [`a`,`e`,`i`,`o`,`u`,`A`,`E`,`I`,`O`,`U`];
   for (i=0;i<stringa.length; i++){
-    if(vocali.includes(word.charAt(i))=== true){
+    if(vocali.includes(stringa.charAt(i))=== true){
       numerovocali++
-      vocalipresenti.push(word.charAt(i))
+      vocalipresenti.push(stringa.charAt(i))
       vocalipresenti.join()
     }
   }
